@@ -258,6 +258,72 @@ main {
     font-weight: 400;
 }
 
+/* Visit: map + NAP + hours only — no photo dump */
+.visit-page {
+    background: #f9f7f4;
+}
+
+.visit-page .floating-header {
+    background: rgba(249, 247, 244, 0.96);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.visit-page .logo,
+.visit-page nav a {
+    text-shadow: none;
+}
+
+.visit-page main {
+    padding-top: 5.5rem;
+}
+
+.visit-map {
+    display: block;
+    width: 100%;
+    height: min(70vh, 640px);
+    min-height: 360px;
+    border: 0;
+    background: #e8e4dc;
+}
+
+.visit-details {
+    text-align: center;
+    padding: 2.5rem 1.5rem 4.5rem;
+}
+
+.visit-details h1 {
+    font-size: 2.15rem;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-bottom: 0.85rem;
+}
+
+.visit-details .nap,
+.visit-details .hours {
+    font-size: 1.05rem;
+    color: #444;
+    margin: 0.35rem 0;
+}
+
+.visit-details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.visit-details a:hover {
+    text-decoration: underline;
+}
+
+.visit-details .map-link {
+    margin-top: 1.1rem;
+    font-size: 0.9rem;
+}
+
+.visit-details .map-link a {
+    color: #1a5fad;
+    font-weight: 600;
+}
+
 footer {
     background: #2c2c2c;
     color: #fff;
@@ -305,8 +371,18 @@ footer {
         min-height: 380px;
     }
 
-    .info-content h1 {
+    .info-content h1,
+    .visit-details h1 {
         font-size: 1.7rem;
+    }
+
+    .visit-page main {
+        padding-top: 6.5rem;
+    }
+
+    .visit-map {
+        height: 50vh;
+        min-height: 280px;
     }
 
     .tap-to-call {
