@@ -4,7 +4,7 @@ Rename + page map only. Real shop photos; do not replace pixels with placeholder
 
 **Pages:** Home | Meat | Produce | Groceries | Gas | Visit | skip
 
-**Visit:** map + NAP + hours only. Do **not** assign storefront photos (`hero-01`, `hero-02`, `hero-03`, `gas-01`) to Visit. `hero-03` is the Home-only exterior. `hero-01` / `hero-02` are not paired on any page.
+**Visit:** map + NAP + hours only. Do **not** assign storefront photos (`hero-01`, `hero-02`, `hero-03`, `gas-01`) to Visit. `hero-03` is the Home-only exterior. `hero-01` / `hero-02` are not paired on any page and are **not** a Visit dump. No row in the map below has page = Visit.
 
 **Tortillas:** Meat, not Produce. Both current tortilla stills are carnicería — do not put them on Produce. Groceries only if a *different* shot has no meat in frame (neither of these qualifies). **Do not assign two tortilla shots to the same page.**
 
@@ -37,8 +37,8 @@ Other near-duplicates: `aisle-01` ≈ `produce-03` (same produce aisle; `produce
 | old | new | rule |
 |---|---|---|
 | `hero-03.jpg` | `produce_oranges_potatoes_storefront_1.jpg` | Home first / only exterior |
-| `hero-01.jpg` | `storefront_hilltop_ice_atm_1.jpg` | Not Home. Not Visit. skip |
-| `hero-02.jpg` | `storefront_hilltop_ice_atm_2.jpg` | Do not pair with hero-01 or hero-03. skip |
+| `hero-01.jpg` | `storefront_hilltop_ice_atm_1.jpg` | Not Home. Not Visit. Not paired with hero-02 or hero-03. **skip** (not a Visit dump) |
+| `hero-02.jpg` | `storefront_hilltop_ice_atm_2.jpg` | Do not pair with hero-01 or hero-03. **skip** (not a Visit dump) |
 | `store-01.jpg` | `skip_windshield_storefront_1.jpg` | skip / not Home |
 | `meat-01.jpg` | `meat_arrachera_1.jpg` | Meat only; never Home |
 | `store-02.jpg` | `meat_la_selecta_corn_tortillas_1.jpg` | **The** Meat tortilla shot (cooler by meat signs). Caption: Fresh corn tortillas |
@@ -66,8 +66,8 @@ Other near-duplicates: `aisle-01` ≈ `produce-03` (same produce aisle; `produce
 | aisle-05.jpg | grocery_tortilla_chips_1.jpg | Bagged tortilla chips and tostadas: Hi-Chi's, Rodeo, Selecta | Groceries |
 | aisle-06.jpg | grocery_ramen_candy_wine_1.jpg | Aisle with Buldak ramen, Van Camp's beans, hanging candy, and wine bottles | Groceries |
 | gas-01.jpg | gas_mobil_pumps_1.jpg | Mobil pumps, tanker hose, and price sign with Hilltop Market | Gas |
-| hero-01.jpg | storefront_hilltop_ice_atm_1.jpg | HILLTOP MARKET red letters, Packaged ICE chest, MetaBank ATM, window decals | skip |
-| hero-02.jpg | storefront_hilltop_ice_atm_2.jpg | Same ice-chest / ATM storefront, portrait with car-hood reflection (do not pair with hero-01 or hero-03) | skip |
+| hero-01.jpg | storefront_hilltop_ice_atm_1.jpg | HILLTOP MARKET red letters, Packaged ICE chest, MetaBank ATM, window decals (not paired; not a Visit dump) | skip |
+| hero-02.jpg | storefront_hilltop_ice_atm_2.jpg | Same ice-chest / ATM storefront, portrait with car-hood reflection (not paired with hero-01 or hero-03; not a Visit dump) | skip |
 | hero-03.jpg | produce_oranges_potatoes_storefront_1.jpg | Storefront wall letters MEAT / PRODUCE / GROCERIES / LIQUOR; outdoor bins of oranges and potatoes | Home |
 | hero-04.jpg | storefront_hilltop_ice_atm_3.jpg | Downscaled duplicate of hero-02 (ice chest, ATM, HILLTOP MARKET letters) | skip |
 | liquor-01.jpg | liquor_score_tequila_soccer_ball_1.jpg | Score Tequila Reposado soccer-ball bottle in a Holiday Special box | skip |
