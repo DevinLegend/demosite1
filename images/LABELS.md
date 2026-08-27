@@ -6,7 +6,14 @@ Rename + page map only. Real shop photos; do not replace pixels with placeholder
 
 **Visit:** map + NAP + hours only. Do **not** assign storefront photos (`hero-01`, `hero-02`, `hero-03`, `gas-01`) to Visit. `hero-03` is the Home-only exterior. `hero-01` / `hero-02` are not paired on any page.
 
-**Tortillas:** Meat, not Produce. Both tortilla stills are carnicería. Only **one** tortilla shot on Meat: `store-02` (La Selecta cooler). `meat-02` / `meat-03` are extra case+tortilla stills — **skip**. Groceries only if a shot has no meat in frame (none of these).
+**Tortillas:** Meat, not Produce. Both current tortilla stills are carnicería — do not put them on Produce. Groceries only if a *different* shot has no meat in frame (neither of these qualifies). **Do not assign two tortilla shots to the same page.**
+
+| old | what it is | page |
+|---|---|---|
+| `store-02.jpg` | Cooler by meat-case price signs (La Selecta corn tortillas) | **Meat** (the one tortilla still on a page). Caption: Fresh corn tortillas |
+| `meat-02.jpg` | Bodo's / El Milagro stacks against the meat case | **skip** (second tortilla still — not a second Meat photo, not Produce, not Groceries) |
+| `meat-03.jpg` | Santa Fe tortillas on the beef case | **skip** (third still) |
+| `aisle-05.jpg` | Bagged **chips** / tostadas, no meat case | Groceries (not a tortilla shot) |
 
 **Rotation:** `meat-02.jpg` and `meat-03.jpg` were sideways after the scrape (price tags / bag text vertical). Rotated **90° clockwise** (lossless jpegtran) so text reads left-to-right, then renamed. `hero-01.jpg` pixels already read HILLTOP MARKET L→R (landscape 2048×1536); no rotation.
 
@@ -19,7 +26,7 @@ Do not treat every file as a unique hero. Same-subject `_1` / `_2` / `_3`:
 | Instagram arrachera / taquizas still (same board, caption, knife, orange) | `meat-04.jpg` → `meat_arrachera_taquizas_1.jpg` | `meat-05` → `_2`, `meat-09` (720p) → `_3` — **skip** |
 | Tomahawk + rib primal on the cutting board | `meat-06.jpg` → `meat_tomahawk_1.jpg` (**Meat**) | `meat-08.jpg` → `meat_tomahawk_2.jpg` — **skip** |
 | USDA Prime arrachera with vacuum pack (`meat-01`) | Distinct shot — **Meat**, never Home | Not a twin of the taquizas trio |
-| Meat case + tortillas (`meat-02` Rodeo, `meat-03` Santa Fe) | Related, different brands. **skip** (second/third tortilla shots; Meat page uses `store-02` only) | |
+| Meat case + tortillas (`meat-02` Bodo's/El Milagro, `meat-03` Santa Fe) | Both carnicería. **skip** — only `store-02` (cooler) is the Meat-page tortilla still | |
 | Tomahawks with kale (`meat-10`) | Unique garnish plate — **Meat** | |
 | Beef stacks in red bags (`meat-07`) | Unique prep — **skip** as extra | |
 
@@ -34,8 +41,8 @@ Other near-duplicates: `aisle-01` ≈ `produce-03` (same produce aisle; `produce
 | `hero-02.jpg` | `storefront_hilltop_ice_atm_2.jpg` | Do not pair with hero-01 or hero-03. skip |
 | `store-01.jpg` | `skip_windshield_storefront_1.jpg` | skip / not Home |
 | `meat-01.jpg` | `meat_arrachera_1.jpg` | Meat only; never Home |
-| `store-02.jpg` | `meat_la_selecta_corn_tortillas_1.jpg` | **The** Meat tortilla shot. Caption: Fresh corn tortillas |
-| `meat-02.jpg` | `meat_case_rodeo_tortillas_1.jpg` | Carnicería tortillas (Rodeo / case). skip — not a second Meat tortilla |
+| `store-02.jpg` | `meat_la_selecta_corn_tortillas_1.jpg` | **The** Meat tortilla shot (cooler by meat signs). Caption: Fresh corn tortillas |
+| `meat-02.jpg` | `meat_case_rodeo_tortillas_1.jpg` | Bodo's / El Milagro stacks against the case. **skip** — do not put a second tortilla still on Meat, Produce, or Groceries |
 | `gas-01.jpg` | `gas_mobil_pumps_1.jpg` | Gas tab. Not Visit |
 | `aisle-04.jpg` | `grocery_condiments_1.jpg` | Groceries |
 | `aisle-05.jpg` | `grocery_tortilla_chips_1.jpg` | Groceries (chips, not tortillas) |
@@ -69,7 +76,7 @@ Other near-duplicates: `aisle-01` ≈ `produce-03` (same produce aisle; `produce
 | liquor-04.jpg | liquor_checkout_shelves_1.jpg | Checkout with floor-to-ceiling liquor wall (Glenfiddich, Don Julio 1942, sliding ladder) | skip |
 | liquor-05.jpg | liquor_huichol_skull_tequila_1.jpg | Riqueza Cultural Huichol beaded skull tequila añejo, $249.99 | skip |
 | meat-01.jpg | meat_arrachera_1.jpg | Thin-sliced USDA Prime arrachera / skirt steak, Upper Iowa / Angus pack, knife, orange | Meat |
-| meat-02.jpg | meat_case_rodeo_tortillas_1.jpg | Meat case (carne preparada) with shelf of Rodeo / corn tortillas (rotated 90° CW); extra tortilla still | skip |
+| meat-02.jpg | meat_case_rodeo_tortillas_1.jpg | Bodo's / El Milagro corn-tortilla stacks against the meat case (rotated 90° CW); second carnicería tortilla still | skip |
 | meat-03.jpg | meat_case_santa_fe_tortillas_1.jpg | Beef case (arrachera, carne asada) with Tortilleria Santa Fe tortillas (rotated 90° CW); extra tortilla still | skip |
 | meat-04.jpg | meat_arrachera_taquizas_1.jpg | Marbled arrachera on the board with taquizas Instagram caption (best of this trio) | skip |
 | meat-05.jpg | meat_arrachera_taquizas_2.jpg | Same taquizas arrachera still, tighter crop (duplicate of meat-04) | skip |
