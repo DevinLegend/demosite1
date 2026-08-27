@@ -127,7 +127,7 @@ nav a.is-current::after {
 
 main {
     padding-top: 0;
-    background: #f9f7f4;
+    background: #111;
 }
 
 /* Full-bleed photos with visible captions */
@@ -140,12 +140,13 @@ main {
 }
 
 /* Contrast break between consecutive photos — they must never share an edge.
-   Cream band matches the title band; height stays on the photo (margin, not border). */
+   Dark band (body/main #111) sits between stills; cream title band is unchanged.
+   Margin (not border) so 85vh photos stay full size. */
 .hero-section + .hero-section,
 .hero-section + .photo-block,
 .photo-block + .photo-block,
 .photo-block + .hero-section {
-    margin-top: clamp(2.75rem, 7vh, 5rem);
+    margin-top: clamp(4.5rem, 12vh, 7rem);
 }
 
 .hero-section {
