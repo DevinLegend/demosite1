@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produce - Hilltop Market</title>
-    <meta name="description" content="Fresh produce at Hilltop Market">
+    <title>Produce — Hilltop Market</title>
+    <meta name="description" content="Fresh produce at Hilltop Market in Chula Vista.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="floating-header">
         <div class="header-content">
-            <div class="logo">Hilltop Market</div>
+            <a class="logo" href="index.html">Hilltop Market</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="meat.html">Meat</a>
-                <a href="produce.html">Produce</a>
+                <a href="produce.html" class="is-current">Produce</a>
                 <a href="groceries.html">Groceries</a>
+                <a href="gas.html">Gas</a>
                 <a href="visit.html">Visit</a>
             </nav>
         </div>
@@ -28,27 +29,24 @@
     </a>
 
     <main>
-        <section class="hero-section">
-            <img src="images/produce-01.jpg" alt="Fresh produce selection" loading="eager">
-        </section>
+        <figure class="hero-section">
+            <img src="images/aisle-01.jpg" alt="Produce aisle with citrus, leafy greens, peppers, and dried chiles" loading="eager">
+            <figcaption>Fresh produce</figcaption>
+        </figure>
 
         <section class="info-section">
             <div class="info-content">
-                <h1>Fresh Produce</h1>
-                <p>Daily selection</p>
+                <h1>Produce</h1>
+                <p class="lede">Citrus, greens, peppers, and daily stock</p>
             </div>
-        </section>
-
-        <section class="hero-section">
-            <img src="images/aisle-01.jpg" alt="Market aisle with produce" loading="lazy">
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p>(619) 426-2200</p>
-            <p>Open Daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a></p>
+            <p>Open daily 6am–9pm</p>
         </div>
     </footer>
 

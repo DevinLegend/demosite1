@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meat - Hilltop Market</title>
-    <meta name="description" content="Quality meat selection at Hilltop Market">
+    <title>Meat — Hilltop Market</title>
+    <meta name="description" content="Fresh meat, pork rinds, and tortillas at Hilltop Market in Chula Vista.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="floating-header">
         <div class="header-content">
-            <div class="logo">Hilltop Market</div>
+            <a class="logo" href="index.html">Hilltop Market</a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="meat.html">Meat</a>
+                <a href="meat.html" class="is-current">Meat</a>
                 <a href="produce.html">Produce</a>
                 <a href="groceries.html">Groceries</a>
+                <a href="gas.html">Gas</a>
                 <a href="visit.html">Visit</a>
             </nav>
         </div>
@@ -28,27 +29,59 @@
     </a>
 
     <main>
-        <section class="hero-section">
-            <img src="images/meat-01.jpg" alt="Fresh meat selection" loading="eager">
-        </section>
+        <figure class="hero-section">
+            <img src="images/meat-01.jpg" alt="Fresh marbled arrachera on the cutting board" loading="eager">
+            <figcaption>Arrachera</figcaption>
+        </figure>
 
         <section class="info-section">
             <div class="info-content">
-                <h1>Quality Meat</h1>
-                <p>Fresh cuts daily</p>
+                <h1>Meat</h1>
+                <p class="lede">Fresh cuts, pork rinds, and tortillas</p>
             </div>
         </section>
 
-        <section class="hero-section">
-            <img src="images/meat-02.jpg" alt="Premium meat products" loading="lazy">
-        </section>
+        <figure class="photo-block">
+            <img src="images/meat-11.jpg" alt="Fresh pork rinds in a bin above the meat case" loading="lazy">
+            <figcaption>Fresh pork rinds (chicharrones)</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/store-02.jpg" alt="La Selecta corn tortillas in a cooler by the meat case" loading="lazy">
+            <figcaption>Fresh corn tortillas</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/meat-02.jpg" alt="Meat case with a shelf of corn tortillas" loading="lazy">
+            <figcaption>Fresh tortillas</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/meat-03.jpg" alt="Packaged tortillas beside the beef case" loading="lazy">
+            <figcaption>Fresh tortillas</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/meat-12.jpg" alt="Marinated pork and chicken in the meat case" loading="lazy">
+            <figcaption>Marinated pork and chicken</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/meat-06.jpg" alt="Tomahawk steaks and rib roast on the cutting board" loading="lazy">
+            <figcaption>Tomahawk steaks</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/meat-10.jpg" alt="Ribeye steaks garnished with kale and green onion" loading="lazy">
+            <figcaption>Fresh steaks</figcaption>
+        </figure>
     </main>
 
     <footer>
         <div class="footer-content">
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p>(619) 426-2200</p>
-            <p>Open Daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a></p>
+            <p>Open daily 6am–9pm</p>
         </div>
     </footer>
 

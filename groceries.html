@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groceries - Hilltop Market</title>
-    <meta name="description" content="Full grocery selection at Hilltop Market">
+    <title>Groceries — Hilltop Market</title>
+    <meta name="description" content="Groceries, dairy, and house-made salsa at Hilltop Market in Chula Vista.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="floating-header">
         <div class="header-content">
-            <div class="logo">Hilltop Market</div>
+            <a class="logo" href="index.html">Hilltop Market</a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="meat.html">Meat</a>
                 <a href="produce.html">Produce</a>
-                <a href="groceries.html">Groceries</a>
+                <a href="groceries.html" class="is-current">Groceries</a>
+                <a href="gas.html">Gas</a>
                 <a href="visit.html">Visit</a>
             </nav>
         </div>
@@ -28,31 +29,54 @@
     </a>
 
     <main>
-        <section class="hero-section">
-            <img src="images/aisle-01.jpg" alt="Grocery aisles at Hilltop Market" loading="eager">
-        </section>
+        <figure class="hero-section">
+            <img src="images/produce-01.jpg" alt="Dairy, eggs, and groceries in the refrigerated case" loading="eager">
+            <figcaption>Dairy and eggs</figcaption>
+        </figure>
 
         <section class="info-section">
             <div class="info-content">
-                <h1>Full Grocery Selection</h1>
-                <p>Everything you need</p>
+                <h1>Groceries</h1>
+                <p class="lede">Staples, snacks, and house-made salsa</p>
             </div>
         </section>
 
-        <section class="hero-section">
-            <img src="images/liquor-01.jpg" alt="Wine and spirits selection" loading="lazy">
-        </section>
+        <figure class="photo-block">
+            <img src="images/aisle-04.jpg" alt="Grocery aisle with oils, snacks, and coolers" loading="lazy">
+            <figcaption>Grocery aisle</figcaption>
+        </figure>
 
-        <section class="hero-section">
-            <img src="images/meat-02.jpg" alt="Tortillas and specialty items" loading="lazy">
-        </section>
+        <figure class="photo-block">
+            <img src="images/aisle-05.jpg" alt="Tortilla chips and tostadas on the shelf" loading="lazy">
+            <figcaption>Tortilla chips and tostadas</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/aisle-06.jpg" alt="Beans, noodles, and snacks in the grocery aisle" loading="lazy">
+            <figcaption>Aisle staples</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/prepared-04.jpg" alt="House-made salsa, guacamole, and ceviche in the cooler" loading="lazy">
+            <figcaption>Salsa, guacamole, and ceviche</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/prepared-03.jpg" alt="Prepared foods and dairy in the glass cooler" loading="lazy">
+            <figcaption>Prepared foods</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/aisle-03.jpg" alt="Instant birria seasoning and grocery staples" loading="lazy">
+            <figcaption>Mexican staples</figcaption>
+        </figure>
     </main>
 
     <footer>
         <div class="footer-content">
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p>(619) 426-2200</p>
-            <p>Open Daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a></p>
+            <p>Open daily 6am–9pm</p>
         </div>
     </footer>
 
