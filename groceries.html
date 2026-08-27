@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Groceries - Hilltop Market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #27ae60;
+        }
+        
+        .hero {
+            height: 70vh;
+            background: url('images/grocery-store.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 70px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #27ae60;
+            text-align: center;
+        }
+        
+        .grocery-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .grocery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .grocery-category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .grocery-category:hover {
+            transform: translateY(-5px);
+        }
+        
+        .grocery-category img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .grocery-content {
+            padding: 1.5rem;
+        }
+        
+        .grocery-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+        }
+        
+        .grocery-content p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .specialty-section {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+        
+        .specialty-section h2 {
+            margin-bottom: 3rem;
+        }
+        
+        .specialty-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .specialty-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+        }
+        
+        .specialty-item h3 {
+            font-size: 1.3rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        
+        .specialty-item p {
+            color: #555;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hilltop Market</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meat.html">Meat</a></li>
+                <li><a href="produce.html">Produce</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Quality Groceries</h1>
+            <p>Everything You Need for Your Table</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Complete Grocery Selection</h2>
+        <p class="grocery-intro">
+            From everyday essentials to specialty items, Hilltop Market stocks a comprehensive selection 
+            of quality groceries. We carry trusted national brands alongside local favorites and unique 
+            specialty products you won't find at chain stores.
+        </p>
+        
+        <div class="grocery-grid">
+            <div class="grocery-category">
+                <img src="images/dairy-section.jpg" alt="Dairy Products">
+                <div class="grocery-content">
+                    <h3>Dairy & Eggs</h3>
+                    <p>Fresh milk, butter, cheese, yogurt, and farm-fresh eggs</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/bakery.jpg" alt="Fresh Bakery">
+                <div class="grocery-content">
+                    <h3>Bakery</h3>
+                    <p>Fresh-baked breads, rolls, tortillas, and pastries</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/deli.jpg" alt="Deli Counter">
+                <div class="grocery-content">
+                    <h3>Deli</h3>
+                    <p>Premium sliced meats, cheeses, and prepared salads</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/frozen-foods.jpg" alt="Frozen Foods">
+                <div class="grocery-content">
+                    <h3>Frozen Foods</h3>
+                    <p>Vegetables, fruits, meals, and ice cream</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/pantry.jpg" alt="Pantry Staples">
+                <div class="grocery-content">
+                    <h3>Pantry Staples</h3>
+                    <p>Pasta, rice, beans, canned goods, and baking supplies</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/beverages.jpg" alt="Beverages">
+                <div class="grocery-content">
+                    <h3>Beverages</h3>
+                    <p>Sodas, juices, water, coffee, tea, and more</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/snacks.jpg" alt="Snacks">
+                <div class="grocery-content">
+                    <h3>Snacks</h3>
+                    <p>Chips, crackers, nuts, candy, and healthy options</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/international.jpg" alt="International Foods">
+                <div class="grocery-content">
+                    <h3>International</h3>
+                    <p>Mexican, Asian, and Mediterranean specialty items</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/condiments.jpg" alt="Condiments & Sauces">
+                <div class="grocery-content">
+                    <h3>Condiments & Sauces</h3>
+                    <p>Oils, vinegars, spices, sauces, and seasonings</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/household.jpg" alt="Household Items">
+                <div class="grocery-content">
+                    <h3>Household</h3>
+                    <p>Cleaning supplies, paper goods, and kitchen essentials</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/health.jpg" alt="Health & Beauty">
+                <div class="grocery-content">
+                    <h3>Health & Beauty</h3>
+                    <p>Personal care items and over-the-counter remedies</p>
+                </div>
+            </div>
+            
+            <div class="grocery-category">
+                <img src="images/pet-supplies.jpg" alt="Pet Supplies">
+                <div class="grocery-content">
+                    <h3>Pet Supplies</h3>
+                    <p>Food and treats for your furry family members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="specialty-section">
+        <h2>What Makes Us Different</h2>
+        <div class="specialty-features">
+            <div class="specialty-item">
+                <h3>Local Products</h3>
+                <p>We proudly feature items from Southern California producers and artisans</p>
+            </div>
+            <div class="specialty-item">
+                <h3>Specialty Items</h3>
+                <p>Hard-to-find ingredients and unique products not available at big box stores</p>
+            </div>
+            <div class="specialty-item">
+                <h3>Personal Service</h3>
+                <p>Our knowledgeable staff can help you find exactly what you need</p>
+            </div>
+            <div class="specialty-item">
+                <h3>Competitive Prices</h3>
+                <p>Quality products at fair prices with weekly specials and promotions</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Hilltop Market. All rights reserved.</p>
+    </footer>
+</body>
+</html>

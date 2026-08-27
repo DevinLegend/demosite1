@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Meats - Hilltop Market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #27ae60;
+        }
+        
+        .hero {
+            height: 70vh;
+            background: url('images/meat-display.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 70px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #27ae60;
+            text-align: center;
+        }
+        
+        .meat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .meat-category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .meat-category img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .meat-content {
+            padding: 2rem;
+        }
+        
+        .meat-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .meat-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .meat-content li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .meat-content li:last-child {
+            border-bottom: none;
+        }
+        
+        .butcher-section {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .butcher-section h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .butcher-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-item h3 {
+            color: #27ae60;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .meat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hilltop Market</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meat.html">Meat</a></li>
+                <li><a href="produce.html">Produce</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Meats</h1>
+            <p>Hand-Cut by Expert Butchers Daily</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Our Meat Selection</h2>
+        
+        <div class="meat-grid">
+            <div class="meat-category">
+                <img src="images/beef-cuts.jpg" alt="Premium Beef">
+                <div class="meat-content">
+                    <h3>USDA Choice Beef</h3>
+                    <ul>
+                        <li>Ribeye Steaks</li>
+                        <li>New York Strip</li>
+                        <li>Filet Mignon</li>
+                        <li>Ground Chuck</li>
+                        <li>Tri-Tip Roast</li>
+                        <li>Short Ribs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="meat-category">
+                <img src="images/chicken.jpg" alt="Fresh Poultry">
+                <div class="meat-content">
+                    <h3>Fresh Poultry</h3>
+                    <ul>
+                        <li>Whole Chickens</li>
+                        <li>Chicken Breasts</li>
+                        <li>Chicken Thighs</li>
+                        <li>Whole Turkeys</li>
+                        <li>Ground Chicken</li>
+                        <li>Rotisserie Chicken</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="meat-category">
+                <img src="images/pork-chops.jpg" alt="Premium Pork">
+                <div class="meat-content">
+                    <h3>Premium Pork</h3>
+                    <ul>
+                        <li>Pork Chops</li>
+                        <li>Pork Tenderloin</li>
+                        <li>Baby Back Ribs</li>
+                        <li>Ground Pork</li>
+                        <li>Pork Shoulder</li>
+                        <li>Bacon & Sausage</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="meat-category">
+                <img src="images/specialty-meats.jpg" alt="Specialty Meats">
+                <div class="meat-content">
+                    <h3>Specialty Selections</h3>
+                    <ul>
+                        <li>Lamb Chops</li>
+                        <li>Veal Cutlets</li>
+                        <li>Marinated Carne Asada</li>
+                        <li>House-Made Sausages</li>
+                        <li>Deli Meats</li>
+                        <li>Custom Orders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="butcher-section">
+        <h2>Expert Butchers at Your Service</h2>
+        <p>
+            Our skilled butchers have decades of combined experience and take pride in every cut. 
+            We hand-select our meat from trusted suppliers and cut to order for guaranteed freshness. 
+            Need a special cut or preparation? Just ask – we're happy to help!
+        </p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Call Ahead</h3>
+                <p>(619) 426-2200</p>
+            </div>
+            <div class="contact-item">
+                <h3>Daily Fresh Cuts</h3>
+                <p>6:00 AM - 9:00 PM</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Hilltop Market. All rights reserved.</p>
+    </footer>
+</body>
+</html>

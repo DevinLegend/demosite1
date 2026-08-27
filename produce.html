@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm-Fresh Produce - Hilltop Market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #27ae60;
+        }
+        
+        .hero {
+            height: 70vh;
+            background: url('images/fresh-vegetables.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 70px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #27ae60;
+            text-align: center;
+        }
+        
+        .produce-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .produce-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .produce-category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .produce-category img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .produce-content {
+            padding: 2rem;
+        }
+        
+        .produce-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .produce-content p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .produce-content ul {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        
+        .produce-content li {
+            padding: 0.3rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .produce-content li:before {
+            content: "• ";
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .local-farms {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .local-farms h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .local-farms p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .produce-content ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hilltop Market</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meat.html">Meat</a></li>
+                <li><a href="produce.html">Produce</a></li>
+                <li><a href="groceries.html">Groceries</a></li>
+                <li><a href="visit.html">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Farm-Fresh Produce</h1>
+            <p>Locally Sourced, Delivered Daily</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Fresh from the Farm</h2>
+        <p class="produce-intro">
+            We partner with local California farms to bring you the freshest fruits and vegetables every day. 
+            Our produce is hand-selected for quality, and we receive multiple deliveries throughout the week 
+            to ensure peak freshness.
+        </p>
+        
+        <div class="produce-grid">
+            <div class="produce-category">
+                <img src="images/fresh-fruits.jpg" alt="Fresh Fruits">
+                <div class="produce-content">
+                    <h3>Fresh Fruits</h3>
+                    <p>Sweet, ripe, and bursting with flavor</p>
+                    <ul>
+                        <li>Strawberries</li>
+                        <li>Blueberries</li>
+                        <li>Apples</li>
+                        <li>Oranges</li>
+                        <li>Bananas</li>
+                        <li>Grapes</li>
+                        <li>Watermelon</li>
+                        <li>Cantaloupe</li>
+                        <li>Pineapple</li>
+                        <li>Avocados</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="produce-category">
+                <img src="images/leafy-greens.jpg" alt="Leafy Greens">
+                <div class="produce-content">
+                    <h3>Leafy Greens</h3>
+                    <p>Crisp, fresh salads and cooking greens</p>
+                    <ul>
+                        <li>Romaine</li>
+                        <li>Iceberg</li>
+                        <li>Butter Lettuce</li>
+                        <li>Spinach</li>
+                        <li>Kale</li>
+                        <li>Arugula</li>
+                        <li>Spring Mix</li>
+                        <li>Swiss Chard</li>
+                        <li>Collard Greens</li>
+                        <li>Herbs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="produce-category">
+                <img src="images/vegetables.jpg" alt="Fresh Vegetables">
+                <div class="produce-content">
+                    <h3>Fresh Vegetables</h3>
+                    <p>Garden-fresh quality every day</p>
+                    <ul>
+                        <li>Tomatoes</li>
+                        <li>Peppers</li>
+                        <li>Onions</li>
+                        <li>Carrots</li>
+                        <li>Broccoli</li>
+                        <li>Cauliflower</li>
+                        <li>Zucchini</li>
+                        <li>Cucumbers</li>
+                        <li>Green Beans</li>
+                        <li>Corn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="produce-category">
+                <img src="images/root-vegetables.jpg" alt="Root Vegetables">
+                <div class="produce-content">
+                    <h3>Root Vegetables & More</h3>
+                    <p>Hearty, flavorful staples</p>
+                    <ul>
+                        <li>Potatoes</li>
+                        <li>Sweet Potatoes</li>
+                        <li>Beets</li>
+                        <li>Turnips</li>
+                        <li>Radishes</li>
+                        <li>Garlic</li>
+                        <li>Ginger</li>
+                        <li>Mushrooms</li>
+                        <li>Squash</li>
+                        <li>Eggplant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="local-farms">
+        <h2>Supporting Local Agriculture</h2>
+        <p>
+            We're proud to work with Southern California farmers who share our commitment to quality and 
+            sustainability. By sourcing locally, we ensure you get the freshest produce while supporting 
+            our regional farming community. Many of our fruits and vegetables travel less than 100 miles 
+            from farm to your table.
+        </p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Hilltop Market. All rights reserved.</p>
+    </footer>
+</body>
+</html>
