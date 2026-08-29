@@ -554,12 +554,14 @@ main {
     margin: 0.35rem 0;
 }
 
-.visit-details a:not(.btn) {
+.visit-details .nap a,
+.visit-details .hours a {
     color: inherit;
     text-decoration: none;
 }
 
-.visit-details a:not(.btn):hover {
+.visit-details .nap a:hover,
+.visit-details .hours a:hover {
     text-decoration: underline;
 }
 
