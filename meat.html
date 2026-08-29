@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meat — Hilltop Market</title>
     <meta name="description" content="Fresh meat, pork rinds, and tortillas at Hilltop Market in Chula Vista.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="floating-header">
         <div class="header-content">
             <a class="logo" href="index.html">Hilltop Market</a>
-            <nav>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+            </button>
+            <nav id="site-nav">
                 <a href="index.html">Home</a>
                 <a href="meat.html" class="is-current">Meat</a>
                 <a href="produce.html">Produce</a>
@@ -36,8 +42,13 @@
 
         <section class="info-section">
             <div class="info-content">
+                <span class="kicker">Carnicería</span>
                 <h1>Meat</h1>
-                <p class="lede">Fresh cuts, pork rinds, and tortillas</p>
+                <p class="lede">Same-day cuts, longaniza, chicharrones, and tortillas by the case.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="tel:6194262200">Call</a>
+                    <a class="btn btn-secondary" href="visit.html">Directions</a>
+                </div>
             </div>
         </section>
 
@@ -74,9 +85,13 @@
 
     <footer>
         <div class="footer-content">
+            <p class="footer-name">Hilltop Market</p>
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p><a href="tel:6194262200">(619) 426-2200</a></p>
-            <p>Open daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a> · Open daily 6am–9pm</p>
+            <p class="footer-links">
+                <a href="tel:6194262200">Call</a>
+                <a href="visit.html">Directions</a>
+            </p>
         </div>
     </footer>
 
