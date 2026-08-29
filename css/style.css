@@ -387,6 +387,27 @@ main {
     margin-top: 1.15rem;
 }
 
+.brand-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.65rem 1.2rem;
+    margin-top: 1.05rem;
+}
+
+.brand-links a {
+    color: #9b1b1b;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.brand-links a:hover {
+    text-decoration: underline;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;

@@ -130,4 +130,4 @@ From user requirements:
 **Hilltop Market & Exxon Mobil**  
 1500 Hilltop Dr, Chula Vista, CA 91911  
 Phone: (619) 426-2200  
-Hours: Open Daily 6am–9pm
+Hours: Open Daily 8am–9pm
