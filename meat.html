@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meat — Hilltop Market</title>
-    <meta name="description" content="Fresh meat, pork rinds, and tortillas at Hilltop Market in Chula Vista.">
+    <meta name="description" content="Carnicería at Hilltop Market in Chula Vista. Arrachera, longaniza, chicharrones, and corn tortillas. Open daily 8am–9pm.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -37,14 +37,50 @@
     <main>
         <figure class="hero-section">
             <img src="images/meat_case_full_showcase_1.jpg" alt="Full meat case with prime rib, T-bones, hanging longaniza, marinated trays, and pork rinds on top" loading="eager">
-            <figcaption>Fresh pork rinds (chicharrones)</figcaption>
+            <figcaption class="hero-dock">
+                <span class="hero-dock-name">Fresh pork rinds (chicharrones)</span>
+                <span class="hero-dock-hours">Open daily 8am–9pm</span>
+                <span class="hero-dock-actions">
+                    <a class="btn btn-primary" href="tel:6194262200">Call</a>
+                    <a class="btn btn-on-dark" href="visit.html">Directions</a>
+                </span>
+            </figcaption>
         </figure>
 
-        <section class="info-section">
+        <section class="info-section dept-intro">
             <div class="info-content">
                 <span class="kicker">Carnicería</span>
                 <h1>Meat</h1>
-                <p class="lede">Same-day cuts, longaniza, chicharrones, and tortillas by the case.</p>
+                <p class="lede">Same-day cuts, hanging longaniza, chicharrones, and corn tortillas by the case.</p>
+                <p class="hours">Open daily 8am–9pm</p>
+
+                <div class="offer-grid">
+                    <a class="offer" href="#arrachera">
+                        <img src="images/meat_arrachera_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Asada</span>
+                            <span class="offer-title">Arrachera</span>
+                            <p>Skirt steak on the board, cut for tacos and asada.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="#longaniza">
+                        <img src="images/meat_longaniza_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Casa</span>
+                            <span class="offer-title">Longaniza</span>
+                            <p>U-shaped links hanging over the marinated trays.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="#tortillas">
+                        <img src="images/meat_la_selecta_corn_tortillas_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">By the case</span>
+                            <span class="offer-title">Tortillas</span>
+                            <p>La Selecta corn tortillas in the cooler by the meat signs.</p>
+                        </div>
+                    </a>
+                </div>
+
                 <div class="actions">
                     <a class="btn btn-primary" href="tel:6194262200">Call</a>
                     <a class="btn btn-secondary" href="visit.html">Directions</a>
@@ -52,7 +88,7 @@
             </div>
         </section>
 
-        <figure class="photo-block">
+        <figure class="photo-block" id="arrachera">
             <img src="images/meat_arrachera_1.jpg" alt="Fresh marbled arrachera on the cutting board" loading="lazy">
             <figcaption>Arrachera</figcaption>
         </figure>
@@ -68,16 +104,26 @@
         </figure>
 
         <figure class="photo-block">
-            <img src="images/meat_longaniza_1.jpg" alt="Hanging longaniza links in the meat case" loading="lazy">
-            <figcaption>Longaniza</figcaption>
-        </figure>
-
-        <figure class="photo-block">
             <img src="images/meat_steaks_butcher_paper_1.jpg" alt="Marbled steaks stacked on butcher paper" loading="lazy">
             <figcaption>Marbled steaks</figcaption>
         </figure>
 
-        <figure class="photo-block">
+        <section class="cluster-band">
+            <span class="kicker">Casa</span>
+            <h2>Longaniza</h2>
+        </section>
+
+        <figure class="photo-block" id="longaniza">
+            <img src="images/meat_longaniza_1.jpg" alt="Hanging longaniza links in the meat case" loading="lazy">
+            <figcaption>Longaniza</figcaption>
+        </figure>
+
+        <section class="cluster-band">
+            <span class="kicker">By the case</span>
+            <h2>Tortillas</h2>
+        </section>
+
+        <figure class="photo-block" id="tortillas">
             <img src="images/meat_la_selecta_corn_tortillas_1.jpg" alt="La Selecta corn tortillas in a cooler by the meat case" loading="lazy">
             <figcaption>Fresh corn tortillas</figcaption>
         </figure>

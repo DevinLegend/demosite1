@@ -222,7 +222,12 @@ main {
     object-position: center 22%;
 }
 
-#salsas {
+#salsas,
+#arrachera,
+#longaniza,
+#tortillas,
+#chips,
+#aisle {
     scroll-margin-top: 4.5rem;
 }
 
@@ -240,7 +245,7 @@ main {
     letter-spacing: 0.02em;
 }
 
-.hero-front figcaption.hero-dock {
+.hero-section figcaption.hero-dock {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,8 +301,28 @@ main {
     max-width: 640px;
 }
 
-.home-intro .info-content {
+.home-intro .info-content,
+.dept-intro .info-content {
     max-width: 980px;
+}
+
+.cluster-band {
+    background: #f9f7f4;
+    text-align: center;
+    padding: 2rem 1.5rem 1.9rem;
+}
+
+.cluster-band h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #1c1c1c;
+    letter-spacing: -0.02em;
+}
+
+.photo-block + .cluster-band,
+.cluster-band + .photo-block,
+.info-section + .cluster-band {
+    margin-top: 0;
 }
 
 .kicker {
@@ -651,7 +676,7 @@ footer {
         min-height: 420px;
     }
 
-    .hero-front figcaption.hero-dock {
+    .hero-section figcaption.hero-dock {
         padding-bottom: 5.25rem;
     }
 
