@@ -10,11 +10,16 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     color: #222;
     overflow-x: hidden;
     background: #111;
+}
+
+h1, h2, .logo, .offer-title {
+    font-family: Fraunces, "Iowan Old Style", Palatino, Georgia, serif;
+    font-optical-sizing: auto;
 }
 
 /* Floating transparent header — sits ON the first photo, never a solid bar above it */
@@ -24,7 +29,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1.25rem 2rem;
+    padding: 1.1rem 1.5rem;
     background: transparent;
     background-color: transparent;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -42,37 +47,82 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .logo {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #111;
+    font-size: 1.45rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #9b1b1b;
     text-decoration: none;
     text-shadow: 0 1px 0 #fff, 0 0 14px rgba(255, 255, 255, 0.85);
     white-space: nowrap;
+    letter-spacing: -0.02em;
 }
 
 .floating-header.scrolled .logo {
     text-shadow: none;
 }
 
+.nav-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1a1a1a;
+    border-radius: 1px;
+    position: absolute;
+    left: 11px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.nav-toggle span {
+    top: 20px;
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+    content: "";
+    left: 0;
+}
+
+.nav-toggle span::before {
+    top: -6px;
+}
+
+.nav-toggle span::after {
+    top: 6px;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 1.15rem 1.4rem;
+    align-items: center;
+    gap: 1.05rem 1.25rem;
 }
 
 nav a {
     color: #111;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-shadow: 0 1px 0 #fff, 0 0 12px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 0 #fff, 0 0 10px rgba(255, 255, 255, 0.95), 0 0 18px rgba(255, 255, 255, 0.8);
     position: relative;
 }
 
@@ -103,21 +153,21 @@ nav a.is-current::after {
     right: 2rem;
     width: 60px;
     height: 60px;
-    background: #d32f2f;
+    background: #b42318;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-decoration: none;
-    box-shadow: 0 4px 20px rgba(211, 47, 47, 0.4);
+    box-shadow: 0 4px 20px rgba(180, 35, 24, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 999;
 }
 
 .tap-to-call:hover {
     transform: scale(1.08);
-    box-shadow: 0 6px 30px rgba(211, 47, 47, 0.6);
+    box-shadow: 0 6px 30px rgba(180, 35, 24, 0.6);
 }
 
 .tap-to-call svg {
@@ -172,6 +222,10 @@ main {
     object-position: center 22%;
 }
 
+#salsas {
+    scroll-margin-top: 4.5rem;
+}
+
 .hero-section figcaption,
 .photo-block figcaption {
     position: absolute;
@@ -186,6 +240,47 @@ main {
     letter-spacing: 0.02em;
 }
 
+.hero-front figcaption.hero-dock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.2rem;
+    padding: 5.5rem 1.5rem 1.85rem;
+    text-align: center;
+}
+
+.hero-dock-name {
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.hero-dock-hours {
+    font-size: 0.92rem;
+    font-weight: 500;
+    opacity: 0.92;
+    margin-bottom: 0.65rem;
+}
+
+.hero-dock-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.btn-on-dark {
+    background: transparent;
+    color: #fff;
+    box-shadow: inset 0 0 0 1.5px #fff;
+}
+
+.btn-on-dark:hover {
+    background: #fff;
+    color: #1c1c1c;
+}
+
 /* Compact identity + rating — not a paragraph */
 .info-section {
     min-height: auto;
@@ -193,7 +288,7 @@ main {
     align-items: center;
     justify-content: center;
     background: #f9f7f4;
-    padding: 2.75rem 1.5rem;
+    padding: 2.75rem 1.5rem 3.25rem;
 }
 
 .info-content {
@@ -201,16 +296,31 @@ main {
     max-width: 640px;
 }
 
-.info-content h1 {
-    font-size: 2.15rem;
+.home-intro .info-content {
+    max-width: 980px;
+}
+
+.kicker {
+    display: block;
+    font-size: 0.72rem;
     font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #9b1b1b;
+    margin-bottom: 0.45rem;
+}
+
+.info-content h1 {
+    font-size: 2.55rem;
+    font-weight: 600;
     color: #1c1c1c;
     margin-bottom: 0.35rem;
-    line-height: 1.15;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .info-content .lede {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     color: #555;
     margin-bottom: 0.85rem;
     font-weight: 400;
@@ -269,6 +379,105 @@ main {
     font-weight: 400;
 }
 
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 1.15rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #b42318;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #931c14;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #1c1c1c;
+    box-shadow: inset 0 0 0 1.5px #1c1c1c;
+}
+
+.btn-secondary:hover {
+    background: #1c1c1c;
+    color: #fff;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0 0.25rem;
+    text-align: left;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    min-height: 100%;
+}
+
+.offer:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.offer img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.offer-body {
+    padding: 0.85rem 1rem 1.05rem;
+}
+
+.offer-kicker {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #9b1b1b;
+}
+
+.offer-title {
+    display: block;
+    font-size: 1.28rem;
+    font-weight: 600;
+    margin: 0.15rem 0 0.25rem;
+    color: #1c1c1c;
+}
+
+.offer-body p {
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.4;
+}
+
 /* Visit: map + NAP + hours only — no photo dump */
 .visit-page {
     background: #f9f7f4;
@@ -284,8 +493,15 @@ main {
     text-shadow: none;
 }
 
+.visit-page .nav-toggle span,
+.visit-page .nav-toggle span::before,
+.visit-page .nav-toggle span::after {
+    box-shadow: none;
+}
+
 .visit-page main {
     padding-top: 5.5rem;
+    background: #f9f7f4;
 }
 
 .visit-map {
@@ -303,10 +519,11 @@ main {
 }
 
 .visit-details h1 {
-    font-size: 2.15rem;
-    font-weight: 700;
+    font-size: 2.55rem;
+    font-weight: 600;
     color: #1c1c1c;
     margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
 }
 
 .visit-details .nap,
@@ -316,34 +533,31 @@ main {
     margin: 0.35rem 0;
 }
 
-.visit-details a {
+.visit-details a:not(.btn) {
     color: inherit;
     text-decoration: none;
 }
 
-.visit-details a:hover {
+.visit-details a:not(.btn):hover {
     text-decoration: underline;
 }
 
-.visit-details .map-link {
-    margin-top: 1.1rem;
-    font-size: 0.9rem;
-}
-
-.visit-details .map-link a {
-    color: #1a5fad;
-    font-weight: 600;
-}
-
 footer {
-    background: #2c2c2c;
+    background: #1c1c1c;
     color: #fff;
     padding: 2.5rem 2rem;
     text-align: center;
 }
 
+.footer-name {
+    font-family: Fraunces, Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0.45rem;
+}
+
 .footer-content p {
-    margin: 0.35rem 0;
+    margin: 0.3rem 0;
     font-size: 0.95rem;
     opacity: 0.9;
 }
@@ -353,28 +567,69 @@ footer {
     text-decoration: none;
 }
 
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 @media (max-width: 860px) {
     .header-content {
-        flex-direction: column;
-        gap: 0.65rem;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
     }
 
     nav {
-        justify-content: center;
-        gap: 0.65rem 1rem;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.85rem;
+        padding: 0.5rem 0 0.35rem;
+    }
+
+    .floating-header:has(nav.is-open) {
+        background: #f9f7f4;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    nav.is-open {
+        display: flex;
+        background: #f9f7f4;
+        border-radius: 0;
+        padding: 0.9rem 0.75rem 1rem;
     }
 
     nav a {
-        font-size: 0.72rem;
+        font-size: 0.78rem;
+        text-shadow: none;
     }
 
     .logo {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 
     .hero-section {
         height: 70vh;
         min-height: 420px;
+    }
+
+    .hero-front figcaption.hero-dock {
+        padding-bottom: 5.25rem;
     }
 
     .photo-block {
@@ -384,11 +639,19 @@ footer {
 
     .info-content h1,
     .visit-details h1 {
-        font-size: 1.7rem;
+        font-size: 1.85rem;
+    }
+
+    .offer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offer img {
+        height: 180px;
     }
 
     .visit-page main {
-        padding-top: 6.5rem;
+        padding-top: 4.75rem;
     }
 
     .visit-map {

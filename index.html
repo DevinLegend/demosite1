@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilltop Market — Chula Vista</title>
     <meta name="description" content="Hilltop Market, 1500 Hilltop Dr, Chula Vista, CA 91911. Meat, produce, groceries, and Mobil gas. Open daily 6am–9pm.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="floating-header">
         <div class="header-content">
             <a class="logo" href="index.html">Hilltop Market</a>
-            <nav>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+            </button>
+            <nav id="site-nav">
                 <a href="index.html" class="is-current">Home</a>
                 <a href="meat.html">Meat</a>
                 <a href="produce.html">Produce</a>
@@ -31,11 +37,19 @@
     <main>
         <figure class="hero-section hero-front">
             <img src="images/produce_oranges_potatoes_storefront_1.jpg" alt="Hilltop Market storefront wall letters for Meat, Produce, Groceries, and Liquor, with oranges and potatoes outside" loading="eager">
-            <figcaption>Hilltop Market</figcaption>
+            <figcaption class="hero-dock">
+                <span class="hero-dock-name">Hilltop Market</span>
+                <span class="hero-dock-hours">Open daily 6am–9pm</span>
+                <span class="hero-dock-actions">
+                    <a class="btn btn-primary" href="tel:6194262200">Call</a>
+                    <a class="btn btn-on-dark" href="visit.html">Directions</a>
+                </span>
+            </figcaption>
         </figure>
 
-        <section class="info-section">
+        <section class="info-section home-intro">
             <div class="info-content">
+                <span class="kicker">Chula Vista</span>
                 <h1>Hilltop Market</h1>
                 <div class="rating" aria-label="Google rating 4.7 out of 5 from 137 reviews">
                     <span class="stars" aria-hidden="true">
@@ -47,22 +61,53 @@
                     </span>
                     <span class="rating-meta">4.7 · 137 reviews</span>
                 </div>
-                <p class="nap">1500 Hilltop Dr, Chula Vista, CA 91911</p>
-                <p class="hours">(619) 426-2200 · Open daily 6am–9pm</p>
+                <p class="lede">Neighborhood market, carnicería, and Mobil — one stop on Hilltop Drive.</p>
+                <p class="hours">Open daily 6am–9pm</p>
+
+                <div class="offer-grid">
+                    <a class="offer" href="meat.html">
+                        <img src="images/meat_case_full_showcase_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Carne</span>
+                            <span class="offer-title">Meat</span>
+                            <p>Cuts, longaniza, chicharrones, and tortillas by the case.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="groceries.html#salsas">
+                        <img src="images/prepared_salsas_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">De la casa</span>
+                            <span class="offer-title">Salsas</span>
+                            <p>House salsa, guacamole, and ceviche in the cooler.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="gas.html">
+                        <img src="images/gas_mobil_pumps_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Mobil</span>
+                            <span class="offer-title">Gas</span>
+                            <p>Fill up next to the market on Hilltop Drive.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="actions">
+                    <a class="btn btn-primary" href="tel:6194262200">Call</a>
+                    <a class="btn btn-secondary" href="visit.html">Directions</a>
+                </div>
             </div>
         </section>
-
-        <figure class="photo-block">
-            <img src="images/grocery_condiments_1.jpg" alt="Grocery aisle with condiments, oils, snacks, and coolers" loading="lazy">
-            <figcaption>Inside the market</figcaption>
-        </figure>
     </main>
 
     <footer>
         <div class="footer-content">
+            <p class="footer-name">Hilltop Market</p>
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p><a href="tel:6194262200">(619) 426-2200</a></p>
-            <p>Open daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a> · Open daily 6am–9pm</p>
+            <p class="footer-links">
+                <a href="tel:6194262200">Call</a>
+                <a href="visit.html">Directions</a>
+            </p>
         </div>
     </footer>
 
