@@ -602,12 +602,16 @@ footer {
         padding: 0.5rem 0 0.35rem;
     }
 
+    .floating-header:has(nav.is-open) {
+        background: #f9f7f4;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    }
+
     nav.is-open {
         display: flex;
-        background: rgba(249, 247, 244, 0.97);
-        border-radius: 10px;
+        background: #f9f7f4;
+        border-radius: 0;
         padding: 0.9rem 0.75rem 1rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
 
     nav a {
