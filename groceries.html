@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groceries — Hilltop Market</title>
-    <meta name="description" content="Groceries, dairy, and house-made salsa at Hilltop Market in Chula Vista.">
+    <meta name="description" content="House salsa, guacamole, and ceviche, plus dairy and aisle staples at Hilltop Market in Chula Vista. Open daily 8am–9pm.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -37,40 +37,56 @@
     <main>
         <figure class="hero-section">
             <img src="images/grocery_dairy_eggs_produce_1.jpg" alt="Dairy, eggs, and groceries in the refrigerated case" loading="eager">
-            <figcaption>Dairy and eggs</figcaption>
+            <figcaption class="hero-dock">
+                <span class="hero-dock-name">Dairy and eggs</span>
+                <span class="hero-dock-hours">Open daily 8am–9pm</span>
+                <span class="hero-dock-actions">
+                    <a class="btn btn-primary" href="tel:6194262200">Call</a>
+                    <a class="btn btn-on-dark" href="visit.html">Directions</a>
+                </span>
+            </figcaption>
         </figure>
 
-        <section class="info-section">
+        <section class="info-section dept-intro">
             <div class="info-content">
                 <span class="kicker">Aisle + cooler</span>
                 <h1>Groceries</h1>
-                <p class="lede">Dairy, snacks, and house-made salsa, guacamole, and ceviche.</p>
+                <p class="lede">House salsa, guacamole, and ceviche in the cooler — plus dairy, chips, and aisle staples.</p>
+                <p class="hours">Open daily 8am–9pm</p>
+
+                <div class="offer-grid">
+                    <a class="offer" href="#salsas">
+                        <img src="images/prepared_salsas_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">De la casa</span>
+                            <span class="offer-title">Salsas</span>
+                            <p>Tomatillo verde, oro, and rojo, guacamole, and ceviche.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="#chips">
+                        <img src="images/grocery_tortilla_chips_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Botanas</span>
+                            <span class="offer-title">Chips</span>
+                            <p>Tortilla chips and tostadas on the shelf.</p>
+                        </div>
+                    </a>
+                    <a class="offer" href="#aisle">
+                        <img src="images/grocery_chef_merito_birria_garlic_1.jpg" alt="" width="400" height="150">
+                        <div class="offer-body">
+                            <span class="offer-kicker">Pasillo</span>
+                            <span class="offer-title">Aisle</span>
+                            <p>Seasoning, noodles, beans, and the condiment run.</p>
+                        </div>
+                    </a>
+                </div>
+
                 <div class="actions">
                     <a class="btn btn-primary" href="tel:6194262200">Call</a>
                     <a class="btn btn-secondary" href="visit.html">Directions</a>
                 </div>
             </div>
         </section>
-
-        <figure class="photo-block">
-            <img src="images/grocery_condiments_1.jpg" alt="Grocery aisle with oils, snacks, and coolers" loading="lazy">
-            <figcaption>Condiments</figcaption>
-        </figure>
-
-        <figure class="photo-block">
-            <img src="images/grocery_tortilla_chips_1.jpg" alt="Tortilla chips and tostadas on the shelf" loading="lazy">
-            <figcaption>Tortilla chips and tostadas</figcaption>
-        </figure>
-
-        <figure class="photo-block">
-            <img src="images/grocery_chef_merito_birria_garlic_1.jpg" alt="Instant birria seasoning and grocery staples" loading="lazy">
-            <figcaption>Mexican staples</figcaption>
-        </figure>
-
-        <figure class="photo-block">
-            <img src="images/grocery_ramen_candy_wine_1.jpg" alt="Beans, noodles, and snacks in the grocery aisle" loading="lazy">
-            <figcaption>Aisle staples</figcaption>
-        </figure>
 
         <figure class="photo-block" id="salsas">
             <img src="images/prepared_salsas_1.jpg" alt="House-made salsa, guacamole, and ceviche in the cooler" loading="lazy">
@@ -81,13 +97,38 @@
             <img src="images/prepared_salsas_and_cheeses_1.jpg" alt="Salsas and cheeses in the glass cooler" loading="lazy">
             <figcaption>Salsas and cheeses</figcaption>
         </figure>
+
+        <section class="cluster-band">
+            <span class="kicker">Pasillo</span>
+            <h2>Aisle</h2>
+        </section>
+
+        <figure class="photo-block" id="chips">
+            <img src="images/grocery_tortilla_chips_1.jpg" alt="Tortilla chips and tostadas on the shelf" loading="lazy">
+            <figcaption>Tortilla chips and tostadas</figcaption>
+        </figure>
+
+        <figure class="photo-block" id="aisle">
+            <img src="images/grocery_chef_merito_birria_garlic_1.jpg" alt="Instant birria seasoning and grocery staples" loading="lazy">
+            <figcaption>Mexican staples</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/grocery_ramen_candy_wine_1.jpg" alt="Beans, noodles, and snacks in the grocery aisle" loading="lazy">
+            <figcaption>Aisle staples</figcaption>
+        </figure>
+
+        <figure class="photo-block">
+            <img src="images/grocery_condiments_1.jpg" alt="Grocery aisle with oils, snacks, and coolers" loading="lazy">
+            <figcaption>Condiments</figcaption>
+        </figure>
     </main>
 
     <footer>
         <div class="footer-content">
             <p class="footer-name">Hilltop Market</p>
             <p>1500 Hilltop Dr, Chula Vista, CA 91911</p>
-            <p><a href="tel:6194262200">(619) 426-2200</a> · Open daily 6am–9pm</p>
+            <p><a href="tel:6194262200">(619) 426-2200</a> · Open daily 8am–9pm</p>
             <p class="footer-links">
                 <a href="tel:6194262200">Call</a>
                 <a href="visit.html">Directions</a>
